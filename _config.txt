@@ -1,0 +1,3 @@
+title: "My ePortfolio"
+description: "A showcase of my Computer Science capstone project and artifacts."
+theme: jekyll-theme-cayman

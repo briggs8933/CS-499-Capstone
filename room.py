@@ -23,7 +23,7 @@ class Room:
         last_cleaned (float): Timestamp of when the room was last cleaned.
     """
 
-    def __init__(self, name: str, x: int, y: int, connections: dict) -> None:
+    def __init__(self, name: str, x: int, y: int, connections: dict = None) -> None:
         """
         Initializes the Room with its name, position, and connections.
 
@@ -37,9 +37,35 @@ class Room:
         self.x: int = x
         self.y: int = y
         self.rect: pygame.Rect = pygame.Rect(x, y, ROOM_WIDTH, ROOM_HEIGHT)
-        self.connections: dict = connections
+        self.connections: dict = connections if connections else {}
         self.is_clean: bool = False
         self.last_cleaned: float = 0.0
+
+    @classmethod
+    def load_rooms_from_db(cls, conn):
+        """
+        Load rooms from the database and return a dictionary of Room instances.
+        """
+        cursor = conn.cursor()
+        cursor.execute('SELECT name, x_coordinate, y_coordinate, is_clean FROM Rooms')
+        rooms = {}
+        for row in cursor.fetchall():
+            name, x, y, is_clean = row
+            room = cls(name, x, y)
+            room.is_clean = bool(is_clean)
+            rooms[name] = room
+        return rooms
+
+    def save_to_db(self, conn):
+        """
+        Save the room's current state to the database.
+        """
+        cursor = conn.cursor()
+        cursor.execute('''
+            INSERT OR REPLACE INTO Rooms (name, x_coordinate, y_coordinate, is_clean)
+            VALUES (?, ?, ?, ?)
+        ''', (self.name, self.x, self.y, int(self.is_clean)))
+        conn.commit()
 
     def dirty(self) -> None:
         """

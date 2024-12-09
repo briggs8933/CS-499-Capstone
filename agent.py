@@ -37,6 +37,43 @@ class Agent:
         self.wait_counter: int = 0
         self.wait_threshold: int = 2
 
+    @classmethod
+    def load_from_db(cls, conn, rooms):
+        """
+        Load agent data from the database.
+        """
+        cursor = conn.cursor()
+        cursor.execute('SELECT current_room, wait_counter, wait_threshold FROM Agent LIMIT 1')
+        row = cursor.fetchone()
+        if row:
+            current_room_name, wait_counter, wait_threshold = row
+            current_room = rooms[current_room_name]
+            agent = cls(current_room)
+            agent.wait_counter = wait_counter
+            agent.wait_threshold = wait_threshold
+            return agent
+        else:
+            # If agent data does not exist, create a new one
+            agent_start_room = random.choice(list(rooms.values()))
+            agent = cls(agent_start_room)
+            agent.save_to_db(conn)
+            return agent
+
+    def save_to_db(self, conn):
+        """
+        Save the agent's current state to the database.
+        """
+        cursor = conn.cursor()
+        cursor.execute('''
+                INSERT INTO Agent (agent_id, current_room, wait_counter, wait_threshold)
+                VALUES (1, ?, ?, ?)
+                ON CONFLICT(agent_id) DO UPDATE SET
+                current_room=excluded.current_room,
+                wait_counter=excluded.wait_counter,
+                wait_threshold=excluded.wait_threshold
+            ''', (self.current_room.name, self.wait_counter, self.wait_threshold))
+        conn.commit()
+
     def increment_wait_counter(self) -> None:
         """
         Increments the agent's wait counter when the player cleans a room.

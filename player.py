@@ -25,6 +25,45 @@ class Player:
         """
         self.current_room: Room = current_room
 
+    @classmethod
+    def load_from_db(cls, conn, rooms, username):
+        """
+        Load player data from the database.
+
+        Args:
+            conn (sqlite3.Connection): The database connection.
+            rooms (dict): Dictionary of Room objects.
+            username (str): The player's username.
+
+        Returns:
+            Player: The player object.
+        """
+        cursor = conn.cursor()
+        cursor.execute('SELECT current_room FROM Players WHERE username = ?', (username,))
+        row = cursor.fetchone()
+        if row:
+            current_room_name = row[0]
+            current_room = rooms[current_room_name]
+            return cls(current_room)
+        else:
+            # Player does not exist
+            raise ValueError("Player does not exist.")
+
+    def save_to_db(self, conn, username):
+        """
+        Save the player's current state to the database.
+
+        Args:
+            conn (sqlite3.Connection): The database connection.
+            username (str): The player's username.
+        """
+        cursor = conn.cursor()
+        cursor.execute('''
+            UPDATE Players SET current_room = ?
+            WHERE username = ?
+        ''', (self.current_room.name, username))
+        conn.commit()
+
     def move(self, direction: str, rooms: Dict[str, Room], messages: List[str]) -> None:
         """
         Moves the player in the specified direction if possible.
@@ -42,7 +81,7 @@ class Player:
             print(message)
             messages.append(message)
 
-            # Specific messages for certain rooms
+
             if self.current_room.name == 'Master Bedroom':
                 messages.append("You have entered the Master Bedroom.")
         else:

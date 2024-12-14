@@ -5,7 +5,8 @@ title: "Algorithms and Data Structures Enhancement"
 
 # Algorithms and Data Structures Enhancement
 
-**Video:** [Algorithms Enhancement Video](https://youtu.be/ULhIkaCrTUU)
+**Video:**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ULhIkaCrTUU" frameborder="0" allowfullscreen></iframe>
 
 For this enhancement, I focused on integrating an advanced algorithmic solution into *House Cleaning Adventure*. By choosing A* pathfinding, I demonstrated my ability to handle complex logic and make strategic decisions about data structures and heuristics, transforming the gameplay from static navigation to dynamic, intelligent agent behavior.
 

@@ -5,7 +5,8 @@ title: "Database Enhancement"
 
 # Database Enhancement
 
-**Video:** [Database Enhancement Video](https://youtu.be/SmAEqfFRv84)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SmAEqfFRv84" frameborder="0" allowfullscreen></iframe>
+
 
 For the final enhancement, I integrated a database into *House Cleaning Adventure*. Expanding beyond a static codebase, I introduced persistent storage for user accounts, high scores, and game states, reflecting a shift towards a professional-level application aligned with real-world industry requirements.
 
@@ -15,7 +16,7 @@ For the final enhancement, I integrated a database into *House Cleaning Adventur
 - Added user authentication with password hashing, secure input validation, and high score tracking.
 
 **Link to Database Code:**
-[Database Integration Code](./Enhanced%20House%20Cleaning%20Adventure/database.py)
+[Database Integration Code](https://github.com/briggs8933/CS-499-Capstone/blob/main/Enhanced%20House%20Cleaning%20Adventure/database.py)
 
 **Outcome Alignment:**
 - **Outcome 3:** Integrating the database required careful architectural decisions and managing evolving requirements.

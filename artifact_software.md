@@ -19,7 +19,7 @@ For this enhancement, I revisited my **IT 140** text-based game, *House Cleaning
 ![In-game Example](./assets/images/software/software1.png)
 
 **Link to Enhanced Code:**
-[Enhanced Code Directory](./Enhanced%20House%20Cleaning%20Adventure/)
+[Enhanced Code Directory](./main/Enhanced%20House%20Cleaning%20Adventure)
 
 **Outcome Alignment:**
 - **Outcome 1:** The first enhancement best demonstrates building collaborative environments. Modular code and thorough documentation enable easy understanding and future teamwork.

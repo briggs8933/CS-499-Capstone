@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav-bar">
-      <ul class="nav-list">
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/outcomes' | relative_url }}">Course Outcomes</a></li>
-        <li><a href="{{ '/codereview' | relative_url }}">Code Review</a></li>
-        <li><a href="{{ '/artifacts' | relative_url }}">Artifacts</a></li>
-      </ul>
-    </nav>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/outcomes' | relative_url }}">Outcomes</a></li>
+          <li><a href="{{ '/codereview' | relative_url }}">Code Review</a></li>
+          <li><a href="{{ '/artifacts' | relative_url }}">Artifacts</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="content-area">
-    {{ content }}
+  <main class="content">
+    <section class="hero">
+      <!-- <h1>Welcome to My Portfolio</h1>
+      <p>Exploring the journey, artifacts, and enhancements I've made throughout the program.</p> -->
+    </section>
+    <div class="container main-content">
+      {{ content }}
+    </div>
   </main>
 
-  <footer class="footer">
-    <p>© {{ site.title }} - {{ site.description }}</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© {{ site.title }} - {{ site.description }}</p>
+    </div>
   </footer>
 </body>
 </html>

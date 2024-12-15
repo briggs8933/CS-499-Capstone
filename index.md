@@ -3,6 +3,15 @@ layout: default
 title: "My CS Capstone ePortfolio"
 ---
 
+# Welcome to My Portfolio
+
+Hello, my name is Brian Riggins. I am a recent graduate of the Computer Science 
+program at SNHU. Throughout my academic journey, I have developed a variety of 
+skills including algorithmic problem-solving, database integration, software 
+engineering principles, and maintaining a security-focused mindset. This portfolio 
+showcases my growth, achievements, and readiness to tackle real-world computing 
+challenges.
+
 # Professional Self-Assessment
 
 As I near the completion of the Computer Science program at SNHU, I have taken the opportunity to reflect on the capstone experience and the journey 

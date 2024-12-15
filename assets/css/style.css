@@ -8,12 +8,12 @@ body {
 }
 
 a {
-  color:#33FF99;
+  color:#5fa67c;
   text-decoration:none;
 }
 
 a:hover {
-  color:#66FFCC; /* lighter green on hover */
+  color:#7fc69c; /* lighter green on hover */
 }
 
 /* Container for consistent horizontal spacing */
@@ -25,7 +25,7 @@ a:hover {
 
 /* Header and Navigation */
 .site-header {
-  background:#333366; /* Slightly lighter than body */
+  background:#323443; 
   padding:20px 0;
   position:fixed;
   width:100%;
@@ -75,7 +75,7 @@ a:hover {
 .hero h1 {
   font-size:2.5em;
   margin-bottom:20px;
-  color:#66CCCC; /* Hero title color */
+  color:#599299; /* Hero title color */
 }
 
 .hero p {
@@ -90,7 +90,7 @@ a:hover {
 }
 
 .main-content h1, .main-content h2, .main-content h3 {
-  color:#0099CC; /* Headings color */
+  color:#599299; /* Headings color */
   margin-top:40px;
 }
 

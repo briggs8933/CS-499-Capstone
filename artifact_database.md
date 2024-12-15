@@ -8,7 +8,15 @@ title: "Database Enhancement"
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SmAEqfFRv84" frameborder="0" allowfullscreen></iframe>
 
 
-For the final enhancement, I integrated a database into *House Cleaning Adventure*. Expanding beyond a static codebase, I introduced persistent storage for user accounts, high scores, and game states, reflecting a shift towards a professional-level application aligned with real-world industry requirements.
+For our last enhancement, I continued with my IT 140 text-based game called House Cleaning Adventure. I created it almost two years ago in my first Python course at SNHU. For this section of the artifact enhancement, I included this artifact in my ePortfolio because I felt that, given my current interests, I would be able to enhance this artifact throughout the course for each category of enhancements to be made while fulfilling all our course outcomes. Additionally, being one of my first projects in the CS program at SNHU, it would best showcase how much I have improved throughout the program. This artifact will best present my ability to enhance my existing code and apply new technologies that I did not originally use, such as Pygame, to improve the overall user experience of the game.
+
+This enhancement, adding a database, showcases my ability to refactor my code to include database integration. The specific components that were improved to showcase my skills included adding a database.py to our already modular code and expanding and refactoring different classes within the game to accommodate the addition of the database. This included creating a database schema to hold all our old data (rooms, room connections, clean/dirty status) and our new data (player username/login, agent tracking, and game results data like high scores and win/lose records). With these additions, I have a working House Cleaning Adventure that stores, manipulates, and accesses data from the database within the game loop to create a unique experience compared to the original text-based game.
+
+When looking to meet the course outcomes for this part of the enhancement, I was able to complete the expected course outcomes of 3, 4, and 5. In my original plan, I had reserved course outcome 3 specifically for our last milestone. There was a particular amount of effort put into getting the database to work with everything that had already been implemented from the original and the last two milestones.
+
+Reflecting on the process brings me both pain and joy. I am beginning to feel the effects of how ambitious these enhancements were, and it has taught me that my planning could always be better. I could have more patience with my work, and lastly, you cannot implement every idea you have. There will be time in the future for the things that didn’t make the cut. On the bright side, my knowledge of using SQLite within Python has expanded tremendously, as well as revisiting older topics like creating login pages. It reminds me of all the classes throughout the program, and it was nice to revisit many of those older projects for insight.
+
+
 
 **Key Changes:**
 - Implemented a SQLite database for persistent data storage.

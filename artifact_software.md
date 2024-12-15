@@ -12,11 +12,15 @@ For this enhancement, I revisited my **IT 140** text-based game, *House Cleaning
 - Refactored the code into modular classes and separate files (e.g., `room.py`, `player.py`, `utils.py`, `constants.py`), improving maintainability and scalability.
 - Added docstrings, comments, and logical naming conventions for clearer code communication.
 
-![Modular Design](./assets/images/software/software3.png)
-
-![House Cleaning Adventure Start](./assets/images/software/software2.png)
-
-![In-game Example](./assets/images/software/software1.png)
+<div class="image-wrapper">
+  ![Modular Design](./assets/images/software/software3.png)
+</div>
+<div class="image-wrapper">
+  ![House Cleaning Adventure Start](./assets/images/software/software2.png)
+</div>
+<div class="image-wrapper">
+  ![In-game Example](./assets/images/software/software1.png)
+</div>
 
 **Link to Original Code:**
 [Original Text-Based Code](https://github.com/briggs8933/CS-499-Capstone/blob/main/Original%20House%20Cleaning%20Adventure/TextBasedGame.py)

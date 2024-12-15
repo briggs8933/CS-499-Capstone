@@ -8,13 +8,12 @@ body {
 }
 
 a {
-  color:#0099FF;
+  color:#33FF99;
   text-decoration:none;
 }
 
 a:hover {
-  color:#00FF99;
-  text-decoration:underline;
+  color:#66FFCC; /* lighter green on hover */
 }
 
 /* Container for consistent horizontal spacing */
@@ -26,7 +25,7 @@ a:hover {
 
 /* Header and Navigation */
 .site-header {
-  background:#181818; /* Slightly lighter than body */
+  background:#00CCCC; /* Slightly lighter than body */
   padding:20px 0;
   position:fixed;
   width:100%;
@@ -63,7 +62,6 @@ a:hover {
   font-weight:normal;
 }
 
-/* Spacing for content below the fixed header */
 .content {
   padding-top:100px; 
 }
@@ -77,6 +75,7 @@ a:hover {
 .hero h1 {
   font-size:2.5em;
   margin-bottom:20px;
+  color:#66CCCC; /* Hero title color */
 }
 
 .hero p {
@@ -91,7 +90,7 @@ a:hover {
 }
 
 .main-content h1, .main-content h2, .main-content h3 {
-  color:#33FF99;
+  color:#0099CC; /* Headings color */
   margin-top:40px;
 }
 
@@ -114,6 +113,7 @@ a:hover {
   font-size:0.9em;
 }
 
+/* Image wrapper */
 .image-wrapper {
   max-width: 600px;
   margin: 0 auto;

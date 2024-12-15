@@ -114,9 +114,8 @@ a:hover {
   font-size:0.9em;
 }
 
-img {
+.image-wrapper img {
   max-width:100%;
   height:auto;
-  display:block;
-  margin:20px 0; 
+  border:1px solid #444; 
 }

@@ -114,9 +114,14 @@ a:hover {
   font-size:0.9em;
 }
 
-img {
-  max-width:100%;
-  height:auto;
-  display:block;
-  margin:20px 0;
+.image-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
 }

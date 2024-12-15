@@ -13,9 +13,9 @@ For this enhancement, I revisited my **IT 140** text-based game, *House Cleaning
 - Added docstrings, comments, and logical naming conventions for clearer code communication.
 
 <div class="image-wrapper" style="max-width:600px; margin:0 auto;">
-  <img src="/assets/images/software/software3.png" alt="Modular Design" style="max-width:100%; height:auto; display:block; margin-bottom:20px;">
-  <img src="/assets/images/software/software2.png" alt="House Cleaning Adventure Start" style="max-width:100%; height:auto; display:block; margin-bottom:20px;">
-  <img src="/assets/images/software/software1.png" alt="In-game Example" style="max-width:100%; height:auto; display:block;">
+  <img src="https://briggs8933.github.io/CS-499-Capstone/assets/images/software/software3.png" alt="Modular Design" style="max-width:100%; height:auto; display:block; margin-bottom:20px;">
+  <img src="https://briggs8933.github.io/CS-499-Capstone/assets/images/software/software2.png" alt="House Cleaning Adventure Start" style="max-width:100%; height:auto; display:block; margin-bottom:20px;">
+  <img src="https://briggs8933.github.io/CS-499-Capstone/assets/images/software/software1.png" alt="In-game Example" style="max-width:100%; height:auto; display:block;">
 </div>
 
 

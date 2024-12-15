@@ -8,11 +8,12 @@ body {
 }
 
 a {
-  color:#f0f0f0;
+  color:#00FF99;
   text-decoration:none;
 }
 
 a:hover {
+  color:#00FF99;
   text-decoration:underline;
 }
 
@@ -64,10 +65,9 @@ a:hover {
 
 /* Spacing for content below the fixed header */
 .content {
-  padding-top:100px; /* Enough to clear the fixed header */
+  padding-top:100px; 
 }
 
-/* Hero section (optional) */
 .hero {
   text-align:center;
   padding:60px 0;
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .main-content h1, .main-content h2, .main-content h3 {
-  color:#ffffff;
+  color:#33FF99;
   margin-top:40px;
 }
 

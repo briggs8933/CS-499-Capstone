@@ -25,7 +25,7 @@ a:hover {
 
 /* Header and Navigation */
 .site-header {
-  background:#00CCCC; /* Slightly lighter than body */
+  background:#333366; /* Slightly lighter than body */
   padding:20px 0;
   position:fixed;
   width:100%;

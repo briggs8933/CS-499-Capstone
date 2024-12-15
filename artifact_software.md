@@ -12,9 +12,11 @@ For this enhancement, I revisited my **IT 140** text-based game, *House Cleaning
 - Refactored the code into modular classes and separate files (e.g., `room.py`, `player.py`, `utils.py`, `constants.py`), improving maintainability and scalability.
 - Added docstrings, comments, and logical naming conventions for clearer code communication.
 
-![Modular Design](assets/images/software/software3.png)
-![House Cleaning Adventure Start](assets/images/software/software2.png)
-![In-game Example](assets/images/software/software1.png)
+<img src="assets/images/software/software3.png" alt="Modular Design" width="600" style="display:block; margin:0 auto;">
+
+<img src="assets/images/software/software2.png" alt="House Cleaning Adventure Start" width="600" style="display:block; margin:0 auto;">
+
+<img src="assets/images/software/software1.png" alt="In-game Example" width="600" style="display:block; margin:0 auto;">
 
 
 **Link to Original Code:**
